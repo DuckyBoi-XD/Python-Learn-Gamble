@@ -2,7 +2,7 @@ print(" ")
 print ("First lesson") # First lesson teaches prints messages with the command 'print' then a message in a ("_______") or ('_____').
 
 
-print ("How to code? :c")
+print ("How to code?")
 print (';-;')
 
 
