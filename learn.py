@@ -1,5 +1,5 @@
 print(" ")
-print ("First lesson") # First lesson teaches prints messages with the command 'print' then a message in a ("_______") or ('_____').
+print ("First lesson") # First lesson teaches prints messages with the command 'print' then a  message in a ("_______") or ('_____').
 
 
 print ("How to code?")
@@ -7,7 +7,7 @@ print (';-;')
 
 
 print(" ")
-print("Second lesson") # Second lesson teaches how to use Syntax or what I call it, 'if' statements.
+print("Second lesson") # Second lesson teaches how to use Syntax or what I call it, 'if'  statements.
 
 if 6 < 5:
     print ("6 is greater than 5 stupid ")
@@ -18,17 +18,17 @@ else:
     print ("No, stupid")
 
 print(" ")
-print("Thrid lesson") # The third lesson teaches how to use comments with the '#' symbol, which I have use in the first 2 lessons.
+print("Thrid lesson") # The third lesson teaches how to use comments with the '#' symbol, which  I have use in the first 2 lessons.
 
 print("# and the key to comments")
 
 print(" ")
-print("Forth lesson") # The fourth lesson covers on variables where we need to first assign a value to them to use it in our code.
+print("Forth lesson") # The fourth lesson covers on variables where we need to first assign a  value to them to use it in our code.
 
 x = 5
 y = "Raymont"
 
-# The lesson also shows how to print variables. Instead of print with ("_______"), we can just put in the variable name in (___). 
+# The lesson also shows how to print variables. Instead of print with ("_______"), we can just  put in the variable name in (___). 
 
 print(x)
 print(y)
@@ -36,17 +36,18 @@ print(y)
 print(" ")
 print("Fifth lesson")  # The fifth lesson teaches how to use casting to print specific data types.
 
-x = str(7.2) # str means string which is the text of the variable, 7.2 would output as 7.2 and 'apple' would output to apple
+x = str(7.2) # str means string which is the text of the variable, 7.2 would output as 7.2 and  'apple' would output to apple
 
-y = int(7.2) # int mean integer which is a whole number not a decimal, 7.2 would output as 7 and 'apple' would output as an error due to it not being a number but a text
+y = int(7.2) # int mean integer which is a whole number not a decimal, 7.2 would output as 7  and 'apple' would output as an error due to it not being a number but a text
 
-z = float(7.2) # float means (I guess) floating which means that the output number would be the exact number (I think) and not text. So, 7.2 would output as 7.2 and 'apple' would output as an error due to it not being a number but a text
+z = float(7.2) # float means (I guess) floating which means that the output number would be the
+# exact number (I think) and not text. So, 7.2 would output as 7.2 and 'apple' would output as an error due to it not being a number but a text
 
 print(x)
 print(y)
 print(z)
 
-# When code becomes like this I like to play around with the code to potentioally make it better or break it completely.
+# When code becomes like this I like to play around with the code to potentioally make it better  or break it completely.
 
 X = 4.761 # This varible is to change all the other casting varibles quickly.
 
@@ -59,7 +60,7 @@ print(y)
 print(z)
 
 print(" ")
-print("Sixth lesson") # The sixth lesson talks about how to name variables. It's important to understand how to properly name variables so errors won't occur.
+print("Sixth lesson") # The sixth lesson talks about how to name variables. It's important to  understand how to properly name variables so errors won't occur.
 
 myname = "Niko" # Works perfectly, all lowercase letters
 
@@ -69,7 +70,7 @@ MyName = "Person" # Works perfectly, first letter of every word is capitalized
 
 my_name = "Ryan" # Works perfectly, underscores are used to separate words
 
-myname2 = "Acon" # Works perfectly, numbers can be used in anywere in the variable's name but the start
+myname2 = "Acon" # Works perfectly, numbers can be used in anywere in the variable's name  but the start
 
 # my name = "Niko" will cause an error due to there being a space in the variable's name
 
@@ -77,7 +78,7 @@ myname2 = "Acon" # Works perfectly, numbers can be used in anywere in the variab
 
 # 2myname = "Ruby" will cause an error due to the variable's name starting with a number
 
-# if = Niko will also cause an error due to 'if' being a special word in Python, as well as 'print', 'else', 'for', 'while', 'def', and many more.
+# if = Niko will also cause an error due to 'if' being a special word in Python, as well as  'print', 'else', 'for', 'while', 'def', and many more.
 
 # printing this message for fun
 
@@ -100,8 +101,7 @@ print(x)
 print(y)
 print(z)
 
-# If you want to reverse it and get the values from the variables you do something called unpacking.
-#  
+# If you want to reverse it and get the values from the variables you do something called unpacking.  
 fruits = ['mango', 'watermelon', 'pear'] # listing the values into a variable.
 
 x, y, z = fruits # assigning the variables to the valuesin the variable 'fruits'
@@ -303,4 +303,152 @@ import random # Python doesn't have a built in random number module, so we need 
 print(random.randrange(1, 10))
 print(" ")
 
+
 # My tutorial has a part which tells you more about random number module for python but it parts away from the tutorial. I decided to split off to the random number module to learn for my game.
+# The random module tutorial has sections of each function in the random module. I will be going though them as lessons.
+# RM = Random Module
+
+print("RM Lesson 1") # The first RM lesson is seed()
+
+random.seed() # Seed / preset
+print(random.randrange(1, 10)) # Generator
+
+random.seed(4) # Seed / preset
+print(random.randrange(1, 10)) # Generator
+
+random.seed(100) # Seed / preset
+print(random.randrange(1, 10)) # Generator
+
+random.seed(100) # Seed / preset
+print(random.randrange(1, 10)) # Generator
+# The seed() fuction is used to set a seed for the ranom number genetrator. This is like a preset where every number generator using the seed will be the same and wont change.
+
+# The syntax for the seed() function is confusion and doesn't make sense to me.
+random.seed(a, version=2)
+# a - This is the seed value. 
+# version = No clue how it works.
+print(" ")
+
+
+# The second RM lesson is getstate() and setstate()
+# Copying code from tutorial to note it.
+
+#print a random number:
+print(random.random()) # Generator (random)
+
+#capture the state:
+state = random.getstate() # getstate() captures the next state of the random numbert generator and saves it into a variable called 'state'
+#print another random number:
+print(random.random()) # Genetrator (random)
+
+#restore the state:
+random.setstate(state) # setstate() restores the state of the random number generator to the state captured by getstate()
+print(random.random()) # Generator (set number)
+
+print(random.random()) # Generator (random)
+
+print(" ")
+# I want to try to change the code
+
+print(random.randrange(1, 50)) # Generator (random)(used to show when set state is implemented)
+
+FunRoll = random.getstate() # Captures next random number)
+print(random.randrange(1, 50)) # Generator (set number (technaclly random))
+
+random.setstate(FunRoll) # sets the variable 'Funroll' to the next generator
+print(random.randrange(1, 50)) # Genertor (set number)
+
+print(random.randrange(1, 50)) # Generator (random)(used to show when set state is implemented)
+
+print(" ")
+# All of them is set as a set state so I'm going to try it again with seed()
+
+random.seed() # uses time to generate random number
+print(random.randrange(1, 50)) 
+
+ExtraFunRoll = random.getstate() # gets seed and set to variable 'ExtraFunRoll'
+print(random.randrange(1, 50)) # generates a random number
+
+random.setstate(ExtraFunRoll) # sets the variable 'ExtraFunRoll' to the next generator
+print(random.randrange(1, 50)) # Generator (set number)
+
+random.seed() # uses time to generate random number
+print(random.randrange(1, 50)) # generates a random number
+
+print(" ") 
+# Can I simplify the code? 
+
+print(random.randrange(1, 50)) 
+
+ExtraFunRoll = random.getstate() # gets seed and set to variable 'ExtraFunRoll'
+print(random.randrange(1, 50)) # generates a random number
+
+random.setstate(ExtraFunRoll) # sets the variable 'ExtraFunRoll' to the next generator
+print(random.randrange(1, 50)) # Generator (set number)
+
+print(random.randrange(1, 50)) # generates a random number
+print(" ")
+# I realaised that the code will already be connected to the seed() so I won't be able to simplify it properly.
+
+print("RM Lesson 2") # The second RM lesson is getrandbits()
+
+a = 6
+random.getrandbits(a)
+print(random.getrandbits(a))
+print(" ")
+
+# Not sure what the point of this fuction is too so not much known.
+
+print("RM Lesson 3") # The third RM lesson is randrange() and randint()
+
+print(random.randrange(1, 10)) # This prints a random number between the ranges 1 and 10
+
+# This is the syntax of the randrange() function. Because of this I finnially understood the syntax means. Syntax is basically the instructions of the function.
+
+print(random.randrange(5, 20, 5))
+# random.randrange( start, stop, step) 
+
+# Start is a optional number to put to instruct what number to start with. Without it, the start will be 0
+# Stop is the number that to put to instruct the function to stop at. This number is required or else it will go forever and become an error
+# Step is an optional number to instruct the function on the size of the increments the fuction takes within the range. The defult number is 1.
+
+# The next part talks about the randint() function.
+
+print(random.randint(0, 50)) # This print a random integer between the 2 ranges written down, 0 and 50
+
+# The syntax for the randint() function is 
+# randint(start, stop)
+# Start is the number that the function will start at
+# Stop is the number that the function will stop at
+
+# This code is basically the same as the randrange() function but with some changes. randint only uses integers where the step number is always 1.
+# This code also requires the start and stop numbers to be definded or else it will go on forever and become an error.
+
+print(" ")
+
+print("RM Lesson Four") # The fourth RM lesson is choice() and choices()
+
+# A choice() is a function that randomly selects a value from any variable. I could be a range, list, tuple, or string.
+
+NameList = ["Niko", "Raymont", "Koji", "Acon", "Valen"] # Defines what is in the list
+print(random.choice(NameList)) # Generates random name out of list
+
+# You can also use the choice() function with strings
+print(random.choice("Hackclub")) # Generates a random letter from the string "Hackclub"
+
+# Choice() function basically choses from a list of values
+
+# The next part of the tutorial talks about the choices() function.
+# The difference between choice() and choices() is that choices() can generate multiple random values from a list of values and has more configurations.
+
+MultiMoney = [100, 200, 300, 400, 500] # Defines what is in the list
+print(random.choices(MultiMoney, k=3)) # Generates 3 random numbers from the list
+# The k means how many times the fuction will generate a random number. This code generates 3
+
+print(random.choices(MultiMoney, weights = [10, 7, 5, 2, 1], k=1)) # Generates 1 random number with probalility
+# Weight is beasically the chances of the value in the list being selected. The higher the better
+
+print(random.choices(MultiMoney, cum_weights = [10, 12, 15, 18, 20], k=1)) # Generates 1 random number with cumulative probability
+# I don't really understand the use of cum_weights or even the use of it.
+
+print(" ")
