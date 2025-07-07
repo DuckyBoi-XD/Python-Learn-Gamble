@@ -173,3 +173,36 @@ def myopinion():
     print('Hackclub is ' + x)
 
 myopinion()
+
+
+print(" ")
+print("Tenth lesson") # The Tenth lesson talks about the different types of data in Python,
+
+print("Text data types: str - (x = 'Hack')") 
+# The only text data type is called 'str'. This is used for text because it uses ' or " to classify what is a word and what is a number.
+
+print("Numerical data types: int - (x = 42)  |  float - (x = 42.1)  |  complex - (x = 42j)") 
+# Int or interger is used for classifying whole numbers. When using x = 43.54 it will output as 43, because 43.54 isn't a whole number, it removes the decimal numbers.
+# float is classifying the entire number. When using x = 43.54 it will output as 43.54.
+# complex classifyies complex number (numbers with j). If you use any other data type with j, you will get an error.
+
+print("Sequence data types: List - (x = ['mango', 'watermelon', 'pear'])  |  Tuple - (x = ('mango', 'watermelon', 'pear'))  |   Range - (x = range(6))") 
+# Lists are used to store mutiple variables in a single variable. Lists can be changed after defining and can only be created using []. 
+# Tuple is a more secure version of lists. Tuples are exactly like lists but they can't be changed after defining it and can only be created using ().
+# Range is confusing and wasn't properly explained. I thought it showed the range of a list of numbers but after testing it, it didn't work.
+
+print("Mapping data types: Dict - (x = {'name': 'Hackclub', 'type': 'community'})")
+# Dict mean dictionary which stores data in data in groups. There isn't much funcability with this but for naming variable in a variable.
+
+print("Set data types: Set - (x = {'mango', 'watermelon', 'pear'})  |  Frozenset - (x = frozenset({'mango', 'watermelon', 'pear'}))")
+# Set is like list where values can be stored in a variable but they are unordered and have to be unique.
+# Frozenset is just like tuple where the values can't be changed after defining it. The difference is just like the set with list.
+# Forzenset is just an unchangable set like tuple is an unchangeable list.
+
+print("Boolean data types: bool - (x = True or False)")
+# Bool is a data type that is only True or False. This can also simplify code where 1 = True and 0 = False.
+
+print("Binary data types: bytes - (x = b'Hackclub')  |  bytearray - (x = bytearray(5))  |  memoryview - (x = memoryview(bytes(5)))")
+# Bytes is a data type that stores binary data. Byte can not be changed making them secure. Don't really know to usage of it.
+# Bytearray is a data type that stores binary data but can be changed. Still don't know what use it has.
+# Memoryview is a data type that allows you to access Bytes with out copying it. You can use indexing with this since Bytes are unchangable.
