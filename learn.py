@@ -425,7 +425,6 @@ print(random.randint(0, 50)) # This print a random integer between the 2 ranges 
 # This code also requires the start and stop numbers to be definded or else it will go on forever and become an error.
 
 print(" ")
-
 print("RM Lesson Four") # The fourth RM lesson is choice() and choices()
 
 # A choice() is a function that randomly selects a value from any variable. I could be a range, list, tuple, or string.
@@ -442,7 +441,7 @@ print(random.choice("Hackclub")) # Generates a random letter from the string "Ha
 # The difference between choice() and choices() is that choices() can generate multiple random values from a list of values and has more configurations.
 
 MultiMoney = [100, 200, 300, 400, 500] # Defines what is in the list
-print(random.choices(MultiMoney, k=3)) # Generates 3 random numbers from the list
+print(random.choices(MultiMoney, k = 3)) # Generates 3 random numbers from the list
 # The k means how many times the fuction will generate a random number. This code generates 3
 
 print(random.choices(MultiMoney, weights = [10, 7, 5, 2, 1], k=1)) # Generates 1 random number with probalility
@@ -452,3 +451,37 @@ print(random.choices(MultiMoney, cum_weights = [10, 12, 15, 18, 20], k=1)) # Gen
 # I don't really understand the use of cum_weights or even the use of it.
 
 print(" ")
+print("RM Lesson Five") # The fifth RM lesson is shuffle() and sample()
+
+# The shuffle() function is used to randiomly shuffle the vales in a list. This might be a great idea for my game project.
+CardsHearts = ['2♥', '3♥', '4♥', '5♥', '6♥', '7♥', '8♥', '9♥', '10♥', 'J♥', 'Q♥', 'K♥', 'A♥'] # Defines the list of cards
+random.shuffle(CardsHearts) # Shuffles the list of cards
+print(CardsHearts) # Prints the shuffled list of cards
+# The shuffle() function doesn't create any new list, it changes the original list.
+
+# The nest part is called the sample() function
+CardsSpades = ['2♠', '3♠', '4♠', '5♠', '6♠', '7♠', '8♠', '9♠', '10♠', 'J♠', 'Q♠', 'K♠', 'A♠'] # Defines the list of cards
+print(random.sample(CardsSpades, k=5)) # Generates 5 random cards as a hand
+# The sample() function is used to generate a random sample from a list of values.
+
+# These fuctions are great of my game project.
+
+print(" ")
+print("RM Lesson Six") # The sixth RM lesson is random(), uniform() and triangular()
+
+# The random() function is used to generate a ranfom float from 0 - 1, etc 0.6837265
+print(random.random()) # Generates a random float from 0 - 1, very simple
+
+# The uniform() function is used to generate a random float from a range of numbers.
+print(random.uniform(1, 500)) # Generates a random float from 1 - 500, just like randrange but with float numbers instead of integers
+
+# The triangular() function is used to generate a random float from a range of numbers with a peak.
+print(random.triangular(1, 100, 10)) # Generates a random float between 1 - 100 but it is weighted or has a higher change of being closer to 10.
+# The syntax for the triangular() function is triangular(low, high, mode)
+# Low is bassically like the randrange function where it is the start of the range
+# High is the stop of the range
+# Mode is a bit differet where it has a peak, this is where the random number will be more likely
+
+print(" ")
+# The rest of the RM lessons are not really useful for my kind of knowledge, the functions are tagged with, 'Ued in statistics' and 'Used in theroy.
+#I decided to stop the RM lessons here since I already gotten a lot of information and functions for my game project.
