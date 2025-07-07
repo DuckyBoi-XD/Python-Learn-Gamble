@@ -182,27 +182,125 @@ print("Text data types: str - (x = 'Hack')")
 # The only text data type is called 'str'. This is used for text because it uses ' or " to classify what is a word and what is a number.
 
 print("Numerical data types: int - (x = 42)  |  float - (x = 42.1)  |  complex - (x = 42j)") 
+print(" ")
+
 # Int or interger is used for classifying whole numbers. When using x = 43.54 it will output as 43, because 43.54 isn't a whole number, it removes the decimal numbers.
 # float is classifying the entire number. When using x = 43.54 it will output as 43.54.
 # complex classifyies complex number (numbers with j). If you use any other data type with j, you will get an error.
 
 print("Sequence data types: List - (x = ['mango', 'watermelon', 'pear'])  |  Tuple - (x = ('mango', 'watermelon', 'pear'))  |   Range - (x = range(6))") 
+print(" ")
+
 # Lists are used to store mutiple variables in a single variable. Lists can be changed after defining and can only be created using []. 
 # Tuple is a more secure version of lists. Tuples are exactly like lists but they can't be changed after defining it and can only be created using ().
 # Range is confusing and wasn't properly explained. I thought it showed the range of a list of numbers but after testing it, it didn't work.
 
 print("Mapping data types: Dict - (x = {'name': 'Hackclub', 'type': 'community'})")
+print(" ")
+
 # Dict mean dictionary which stores data in data in groups. There isn't much funcability with this but for naming variable in a variable.
 
 print("Set data types: Set - (x = {'mango', 'watermelon', 'pear'})  |  Frozenset - (x = frozenset({'mango', 'watermelon', 'pear'}))")
+print(" ")
 # Set is like list where values can be stored in a variable but they are unordered and have to be unique.
 # Frozenset is just like tuple where the values can't be changed after defining it. The difference is just like the set with list.
 # Forzenset is just an unchangable set like tuple is an unchangeable list.
 
 print("Boolean data types: bool - (x = True or False)")
+print(" ")
+
 # Bool is a data type that is only True or False. This can also simplify code where 1 = True and 0 = False.
 
 print("Binary data types: bytes - (x = b'Hackclub')  |  bytearray - (x = bytearray(5))  |  memoryview - (x = memoryview(bytes(5)))")
+print(" ")
 # Bytes is a data type that stores binary data. Byte can not be changed making them secure. Don't really know to usage of it.
 # Bytearray is a data type that stores binary data but can be changed. Still don't know what use it has.
 # Memoryview is a data type that allows you to access Bytes with out copying it. You can use indexing with this since Bytes are unchangable.
+
+# You can manually set and find the data type but using a few commands.
+
+# putting a data type and inclosing the variable in a (), manually sets the data type to that data type. When doing this you can now use '()' for any data type.
+
+x = str(('Hackclub')) # str data type
+y = int(123) # int data type
+z = tuple(('SoM', 'Highway', 'Boba')) # tuple data type
+
+# You can find the data type by using the 'type()' command
+
+print(type(x))
+print(type(y)) 
+print(type(z))  
+
+
+print(" ")
+print("Eleventh lesson") # The eleventh lesson talkes about numbers in Python.
+
+# Int or intergers are positive or negitive numbers withoiut decimals or in other words, whole numbers.
+
+ix = 68487274
+iy = -48265
+iz = 6
+
+print(ix) 
+print(iy) 
+print(iz)
+print(" ")
+
+# Float is a number that can have decimals as well as being positive and negitive. 
+
+fx = 1.11
+fy = 1.0
+fz = -183.6743
+
+print(fx)
+print(fy)
+print(fz)
+
+# Floats can even use scientific numbers like 'e' to repersent large numbers.
+
+fx = 937e3
+fy = 12e-4 
+fz = 1.2e6
+
+print(fx)
+print(fy)
+print(fz)
+print(" ")
+
+# Complex numbers are numbers that use imaginary numbers. These number use 'j' to repersent imsginart numbers.
+
+cx = 8 + 9j
+cy = 22j
+cz = -1j
+
+print(cx)
+print(cy)
+print(cz)
+
+# You can also change numbers that already has a data type to another type by using the type name and inclose the variable in ().
+
+x = 87
+y = 4.56
+z = 4 + 20j
+
+a = float(x) # This switches the 'x' variable (87) from a int to a float (87.0).
+b = int(y) # This switches the 'y' variable (4.56) from a float to a int (4).
+c = complex(y) # This switches the 'y' variable (4.56) from a float to a complex number (4.56 + 0j).
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c)) 
+print(" ")
+
+# The next parts taks about random number module which is perfect for my game project.
+
+import random # Python doesn't have a built in random number module, so we need to import it.
+
+print(random.randrange(1, 10))
+print(" ")
+
+# My tutorial has a part which tells you more about random number module for python but it parts away from the tutorial. I decided to split off to the random number module to learn for my game.
