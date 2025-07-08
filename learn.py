@@ -732,7 +732,3 @@ print(FindMethod.find("prizes")) # This will find and calcualte the number or ch
 FindMethod2 = "Huddle around! Get your news here."
 print(FindMethod2.find("u", 15, 34)) # This will find and calcualte the character from the start to the string in the string from the 15th caracter to the end
 # If the method can't find any values in the area, it will output -1
-
-
-
-
