@@ -732,3 +732,516 @@ print(FindMethod.find("prizes")) # This will find and calcualte the number or ch
 FindMethod2 = "Huddle around! Get your news here."
 print(FindMethod2.find("u", 15, 34)) # This will find and calcualte the character from the start to the string in the string from the 15th caracter to the end
 # If the method can't find any values in the area, it will output -1
+
+# index() - This method is similar to the find() method but it will output an error if it can't find the value
+IndexMethod = "Summer of Making is a great program!"
+print(IndexMethod.index("great")) # This will calcutate the number of character to the value
+# You can use index() pretty muchb exactly like the find() method
+
+# There is still so much more methods but I feel like I gotten the main ones so I'll just stop here and look back at it if i need it.
+
+print(" ")
+print("Twentieth lesson") # The twentieth lesson teaches about boolean
+
+# Boolean is a data type that can only be True or False. This is used to check if a condition is met or not.
+# There are many ways to use boolean
+print(9>3) # This is true
+print(5==5) # This is also true
+print(2==3) # This is false
+print(3<1) # This is also false
+# This is coalled conditional statements. This is used to check if a condition is met or not.
+
+# You can use this in an if statement to check if a condition is met or not and run a code if it is met or not
+
+PlayerFund = random.randrange(1, 30)
+Player2Fund = random.randrange(1, 30)
+
+if PlayerFund < Player2Fund:
+    print("Niko is poor")
+elif Player2Fund < PlayerFund:
+    print("Niko is rich")
+else:
+    print("Lol")
+
+# Boolean function can also evaluate a value
+
+Boolean1 = "Pan Fry"
+Boolean2 = 6363.64
+Boolean3 = "582 pancakes"
+
+print(bool(Boolean1))
+print(bool(Boolean2))
+print(bool(Boolean3))
+print(" ")
+
+
+print("Twenty-first lesson") # The twenty-first lesson teaches about operations and operators
+
+# There are many types of operators in Python which are similar to math operators so it's really simple
+ExamplePlus = 5 + 3 
+print(ExamplePlus)
+
+ExampleMinus = 5 - 3
+print(ExampleMinus) 
+
+ExampleMultiply = 5 * 3
+print(ExampleMultiply)
+
+ExampleDivide = 5 / 3
+print(ExampleDivide)
+
+ExampleModulus = 5 % 3
+print(ExampleModulus) # This will output the remainder of the division
+
+ExampleExponent = 5 ** 3
+print(ExampleExponent)
+
+ExampleFloorDivision = 5 // 3
+print(ExampleFloorDivision) # This will divide the number and outut as a whole number
+print(" ")
+
+# There is also operators that can assaign values as while using the value it is defining
+ExampleEquals = 42
+print(ExampleEquals)
+
+ExamaplePlusEquals = 42
+ExamaplePlusEquals += 42
+print(ExamaplePlusEquals) # This will add 42 to the variable 
+
+ExampleMinusEquals = 42
+ExampleMinusEquals -= 42
+print(ExampleMinusEquals) # This will subtract 42 from the variable 
+
+ExampleMultiplyEquals = 42
+ExampleMultiplyEquals *= 42
+print(ExampleMultiplyEquals) # This will multiply 42 to the variable 
+
+ExampleDivideEquals = 42
+ExampleDivideEquals /= 42
+print(ExampleDivideEquals) # This will divide the variable by 42
+
+ExampleModulusEquals = 42
+ExampleModulusEquals %= 42
+print(ExampleModulusEquals) # This will output the remainder of the division
+
+ExampleFloorDivisionEquals = 42
+ExampleFloorDivisionEquals //= 42
+print(ExampleFloorDivisionEquals) # This will divide the variable by 42 and output as a whole number
+
+ExampleExponentEquals = 42
+ExampleExponentEquals **= 42
+print(ExampleExponentEquals) # This will raise the variable to the power of 42
+
+ExampleBitwiseAnd = 42
+ExampleBitwiseAnd &= 42
+print(ExampleBitwiseAnd) # I've tried to understand what it does but because I couldn't but I knew I wouldn't need it. As well as the last few
+
+ExampleBitwiseOr = 42
+ExampleBitwiseOr |= 42
+print(ExampleBitwiseOr) # This will do a bitwise OR operation on the variable
+
+ExampleBitwiseXor = 42
+ExampleBitwiseXor ^= 42
+print(ExampleBitwiseXor) # This will do a bitwise XOR operation on the variable
+
+ExampleRightShift = 42
+ExampleRightShift >>= 42
+print(ExampleRightShift) # This will shift the bits to the right by 42
+
+ExampleLeftShift = 42
+ExampleLeftShift <<= 42
+print(ExampleLeftShift) # This will shift the bits to the left by 42
+
+print(ExampleDirectDefind := 42) # This operation is good for defining a variable directly in a print statement or a function
+print(ExampleDirectDefind)
+print(" ")
+
+# There are also operators that can compare values
+ExampleEqual = 42 == 42
+print(ExampleEqual) # This will look for if the values are the same
+
+ExampleNotEqual = 42 != 42
+print(ExampleNotEqual) # This will look for if the values are different
+
+ExampleGreaterThan = 42 > 42
+print(ExampleGreaterThan) # This will look for if the left value is greater than the right value
+
+ExampleLessThan = 42 < 42
+print(ExampleLessThan) # This will look for if the left value is less than the right value
+
+ExampleGreaterThanOrEqual = 42 >= 42
+print(ExampleGreaterThanOrEqual) # This will look for if the left value is greater than or equal to the right value
+
+ExampleLessThanOrEqual = 42 <= 42
+print(ExampleLessThanOrEqual) # This will output True if the left value is less than or equal to the right value
+print(" ")
+
+# There is also logical operators
+ExampeAnd = 2 + 2 == 4 and 3 * 4 == 12
+print(ExampeAnd) # This will check if both statements are true
+
+ExampleOr = 99 / 3 == 33 or 100 - 1 == 98
+print(ExampleOr) # This will check if at least one of the statements is true
+
+ExampleNot = not 2 + 2 == 4
+print(ExampleNot) # This will check if the statement is false. This basiacally the same as the 'And' operator but just outputs the opposite
+
+# There is a set of operators which is really unque. It looks if 2 variables are the same or not
+
+Isx = 'potato'
+Isy = 'potato'
+
+ExampleIs = Isx is Isy
+print(ExampleIs) # This will check if the vlaues are the same
+
+Isz = 'apple'
+Isa = 'banana'
+
+ExampleIsNot = z is not a
+print(ExampleIsNot) # This will check if the values are not the same
+
+# There is a set of operations to check if a variable is in a variable or not
+Inx = "helpful"
+Iny = "Hackclub includes a helpful community"
+
+ExampleIn = Inx in Iny
+print(ExampleIn) # This will check if the value of Inx is in the value
+
+NotInx = "mean"
+NotIny = "Hackclub includes a helpful community"
+
+ExampleNotIn = NotInx not in NotIny
+print(ExampleNotIn) # This will check if the value of NotInx is not in the value of NotIny
+
+# There is a set of operators that are used for bitwise operations which I won't wanna look into
+# The tutorials talks about how operations have order but it's just like in math so im going to skip over it
+
+print(" ")
+print("Twenty-second lesson") # The twenty-second lesson teaches about lists
+
+# Lists are a data type that is used to store multiple values in a single variable.
+# There are 4 types of lists, list, tuple, set, and dictionary
+
+# A list is used to store multiple values in a single variable. Lists can be changed.
+# Lists have a defiend order meaning when you add another value, it will be added to the end
+# Lists are also changable meaning they can be changed after being definded
+# Lists are also indexed meaning you can access each value in the list using indexing
+ExampleList = ["Summer of Making", "Boba", "Highway"] # A list is defined by using '[]', square brackets 
+print(ExampleList)
+
+# A tuple is used to store mutiple values in a simgle variable just like lists but can't be changed after defining.
+# Tuples are ordered and inexed but unchangable 
+ExampleTuple = ("Summer of Making", "Boba", "Highway") # A tuple is defined by using '()', round brackets
+print(ExampleTuple)
+
+# A set is used to store multiple values in a single variable.
+# Sets are very strict where they are unordered, unchangable, unindexed and doesn't allow duplicates
+ExampleSet = {"Summer of Making", "Boba", "Highway"} # A set is defined by using '{}', curly brackets
+print(ExampleSet)
+
+# A dictionary is used to store multiple values in a single variable but it is unordered and indexed. Dictionaries can have duplicate values.
+# Dictionaries are changable and ordered but doesn't allow duplicate values
+ExampleDictionary = {"Summer of Making": "Hackclub", "Highway": "Hackclub", "Boba": "Hackclub"} # A dictionary is defined by using '{}', curly brackets but with colons to key values
+print(ExampleDictionary)
+print(" ")
+
+print("Twenty-third lesson") # The twenty-third lesson teaches about changing values in lists
+
+# You can change the values in a list by using indexing
+ExampleList = ["Summer of Making", "Boba", "Highway"]
+ExampleList[1] = "Pizza Party" # This will change the second value to "Pizza Party"
+print(ExampleList)
+
+# You can change a range of values using colons to define the values
+ExampleList2 = ["Niko", "Raymont", "Koji", "Acon", "Valen", "Ruby", "Alexren", "Cyao"]
+ExampleList2[1:5] = ["Qincai", "Person"] # This will change the values from index 1 to 5 to "Qincai" and "Person"
+print(ExampleList2) 
+print(" ")
+
+
+print("Twenty-fourth lesson") # The twenty-fourth lesson teaches about adding values to lists
+
+# You can add values to a list by using the append() function
+ExampleList4 = ["Python", "Java", "C++"]
+ExampleList4.append("JavaScript") # This will add the new vlaues to the list
+print(ExampleList4) 
+
+# If you want to insert (not add) a value to a list you can do it by using the insert() function
+ExampleList3 = ["Python", "Jave", "C++"]
+ExampleList3.insert(1, "JavaScript") # This will add "JavaScript" at index 1
+print(ExampleList3) 
+
+# If you want to transfer all the values from one list to another you can use the extend() function
+CodeLanguages = ["Python", "Java", "C++"]
+ExampleList4 = ["JavaScript", "C#", "Bash"]
+CodeLanguages.extend(ExampleList4) # This will add all the values from ExampleList4 to CodeLanguages
+print(CodeLanguages) 
+# extend() can also be used with sets, tuples, and dictionaries
+
+print(" ")
+
+print("Twenty-fifth lesson") # The twenty-fifth lesson teaches about removing values from lists
+
+# You can remove a value from a list by using the remove() function
+ExampleList5 = ["Python", "Java", "C++", "JavaScript"]
+ExampleList5.remove("Java") # This will remove Java from the list
+print(ExampleList5)
+# If there is mutiple occurances of the value, it will only remove the first one
+
+# If you want to remove a value from a list by index you can use the pop() function
+ExampleList6 = ["Python", "Java", "C++", "JavaScript"]
+ExampleList6.pop(2) # This will remove the value at index 2 'C++'
+print(ExampleList6)
+
+# You can also use the del command to do the same thing as pop()
+ExampleList7 = ["Python", "Java", "C++", "JavaScript"]
+del ExampleList7[2] # This will remove the value at index 2 'C++'
+
+# You can also nuke the list with the del command
+del ExampleList7 # This will remove the entire list
+# print(ExampleList7) # This will cause an error because the list has been deleted
+# There is also a clear() function where it will clear the values in the variavle/list but not nuke the list varaiable
+ExampleList8 = ["Python", "Java", "C++", "JavaScript"]
+ExampleList8.clear() # This will clear the values in the list
+print(ExampleList8) 
+print(" ")
+
+
+print("Twenty-sixth lesson") # The twenty-sixth lesson teaches about looping through lists
+# Looping is basically going through the entire list and taking each value one by one.
+# THere are 3 methods to loop through a list in Python, for loop, indexing, while loops, and list comprehensions
+
+# You can loop a list by using a for loop
+ExampleList9 = ["Highway", "Boba", "SoM"]
+for x in ExampleList9: 
+    print(x) 
+# This works by taking each value in the list and assigning it to the variable x, then printing it
+print(" ")
+
+# You can loop a list using indexing
+ExampleList10 = ["Highway", "Boba", "SoM"]
+for i in range(len(ExampleList10)): 
+    print(ExampleList10[i])
+# This works by using the range() and len() function to get the length of the list and then using indexing to print each value
+print(" ")
+
+# You can loop a list using the while loop
+ExampleList11 = ["Highway", "Boba", "SoM"]
+l = 0 # This will start the loop at index 0
+while l < len(ExampleList11): # This will loop through the list until it reaches the end
+    print(ExampleList11[l]) # This will print the value at index l
+    l += 1 # This will increase the index by 1
+# This works by using a while loop to loop through the list until it reaches the end, then printing each value
+print(" ")
+
+# You can also use list comprehensions to loop through a list
+ExampleList12 = ["Highway", "Boba", "SoM"]
+print([x for x in ExampleList12]) 
+# I don't really understand how this works but it works
+print(" ")
+
+
+print("Twenty-seventh lesson") # The twenty-seventh lesson teaches about list comprehensions
+
+# List comprehensions are a way to create lists in a single line of code than 3 lines of code using for statements
+# In my opinion, list comprehensions are a bit confusing but I will try to explain it
+
+# This code is just me playing around
+HackyPeople = ["Niko", "Acon", "Person", "Rowan", "Valen", "Alexren"]
+HackyPeople2 = ["Niko", "Valen", "Acon"]
+
+ExampleListComprehension = [VIP for VIP in HackyPeople if VIP not in HackyPeople2]
+print(ExampleListComprehension)
+
+# There is many imporntant components to a list comprehension
+
+# This is the syntax for a list comprehension:
+#[(changes) for (Each Value) in (variable/list) if (condition/rules)]
+
+# The first part is the changes.
+# The' changes' part addes a modification to the output of the code. However this is not needed and you can repeat the 'Each Value' part
+# For example, if you want to add 1 to each value as the output, you would write: [x + 1 for x in y], x = 'Each Value', y = variable/list
+
+# The second part is the 'Each Value' part.
+# The 'Each Value' part definds each value in the varabile/list into one value but uses them separatly.
+# This values is not important and it more of a place holder value when afterwards it's used, it won't be used again.
+
+# The third part is the variable/list.
+# The variable/list is the list you are using to create the new one.
+
+# The fourth part is the 'condition/rules' part.
+# The 'condition/rules' part is used to filter the values in the list/variable for the output.
+# This is simmilar to the first part or 'changes' but it filters the values instead of changes them.
+
+Pets = ["Dog", "Cat", "Fish", "Hamster", "Bird"]
+ExampleListComprehension2 = [x for x in Pets if 'a' in x or 'i' in x]
+print(ExampleListComprehension2)
+print(" ")
+
+
+print("Twenty-eighth lesson") # The twenty-eighth lesson teaches about sort() function
+
+# The sort() function is used to sort the values in a list in different ways
+SortList = ["Cat", "Dog", "Fish", "Hamster", "Bird"]
+SortList.sort()
+print(SortList)
+
+# You can reverse the sort function too
+SortList2 = ["Cat", "Dog", "Fish", "Hamster", "Bird"]
+SortList.sort(reverse = True)
+print(SortList)
+
+# You can even make your own sort function but I won't bother with doing that
+
+# There are a lot of feature in this. There is one called incasesensitive
+# The sort() function will prioritise capatailized letters. This feature will ignore that
+SortList3 = ["Cat", "dog", "Fish", "hamster", "Bird"]
+SortList3.sort(key = str.lower)
+print(SortList3)
+
+# There is a revere function just like the sort(reverse)
+SortList4 = ["Cat", "dog", "Fish", "hamster", "Bird"]
+SortList4.reverse()
+print(SortList4)
+print(" ")
+
+
+print("Twenty-ninth lesson") # The twenty-ninth lesson teaches about the copy() function
+# There is many ways to copy lists to another list because you can't simply do x = y
+
+# copy() function 
+ExampleCopy = ["Highway", "Boba", "SoM"]
+ExampleCopy2 = ExampleCopy.copy()
+print(ExampleCopy2)
+
+# list() function
+ExampleCopyList = ["Highway", "Boba", "SoM"]
+ExampleCopyList2 = list(ExampleCopyList)
+print(ExampleCopyList2)
+
+# slice operator
+ExampleCopySplit =  ["Highway", "SoM"]
+ExampleCopySplit2 = ExampleCopySplit[:]
+print(ExampleCopySplit)
+print(" ")
+
+print("Thirtieth lesson") # The thirtieth lesson teaches about joining 2 or more lists together
+
+# The first and simpe way to combine list is to use the '+' operator
+ExampleCombinePlus = [1, 2, 3, 4, 5]
+ExampleCombinePlus2 = ["Potato", "Advocado", "Lettuce", "Cabbage", "Carrot"]
+ExampleCombinePlus3 = ExampleCombinePlus + ExampleCombinePlus2
+print(ExampleCombinePlus3)
+
+# Another way is to use append()
+ExampleCombineAppend = [1, 2, 3, 4, 5]
+ExampleCombineAppend2 = ["Potato", "Advocado", "Lettuce", "Cabbage", "Carrot"]
+for x in ExampleCombineAppend:
+  ExampleCombineAppend2.append(x)
+print(ExampleCombineAppend2)
+
+# The last way is to use the extend() functiom
+ExampleCombineExtend = [1, 2, 3, 4, 5]
+ExampleCombineExtend2 = ["Potato", "Advocado", "Lettuce", "Cabbage", "Carrot"]
+ExampleCombineExtend.extend(ExampleCombineExtend2)
+print(ExampleCombineExtend)
+
+# The last lesson has all the methods that I have already touched is great
+print(" ")
+
+
+print("Thirty-first lesson") # The thirty-first lesson teaches about if else statements
+# if statements are important to check if a condition is met or not
+# if else and elif statements are used to check multiple conditions
+# This is going to be one of my last tutorials follows then I will be creating a a master document for all my knowledge
+
+# if statements are used to check if a condition is met or not from using mathimatical and logical operators.
+a = 22
+b = 22
+c = 44
+if a < b: 
+    print("b is greater than a")
+# Elif is a second check one the first one is false
+elif a > b:
+    print("a is greater than b")
+# Else is the last check if none is true. This is a 'if not then' code
+else:
+    print("EQUALITY")
+
+# You can make the if statment 1 line if there is just 1 statement
+if a == b: print("EQUAL")
+
+# You can also make a if statement and an else statment 
+print("Sure it's bigger") if a > b else print("NO")
+
+# You can use 'and' to add more conditions
+if a == b and c == a*2: print("Wow exact")
+
+# You can use 'or' to have even more conditions
+if a < b or a == c: print("Yaya")
+
+# You can use 'not' to clasifty if it doesn't comply
+if not a < b:
+    print("no")
+
+# If there is an if statement in an if statement, its called nested if statements 
+if a == 21:
+    print(1)
+    if b == 23:
+        print(2)
+    else:
+        print("bannana")
+
+# If you need an if statement but without it finished just add pass without getting an error
+if a == c:
+    pass
+print(" ")
+
+
+print("Thirty-second lesson") # The thirty-second lesson teaches about the match statment
+
+# The match statement is to write long lines of if stamtents quickly
+Day = 6
+match Day:
+    case 1:
+        print("Sad day")
+    case 2:
+        print("Sad day")
+    case 3:
+        print("Sad day")
+    case 4:
+        print("Sad day")
+    case 5:
+        print("Sad day")
+    case 6:
+        print("Fun day")
+    case 7:
+        print("Fun day")
+    case 8 | 9 | 10 | 11: # Combines mutiple values with '|'
+        print("HUH?")
+    case _:
+        print("Confusing day") # This is the default case if none of the cases match
+
+# You can make it even more confusing by adding if statements
+Month = 10
+Day = 27
+match Day:
+    case 1 | 2 | 3 | 4 | 5 | 6 | 7 if Month == 6:
+        print("June")
+
+    case 8 | 9 | 10 | 11 | 12 if Month == 7:
+        print("July")
+
+    case 13 | 14 | 15 | 16 | 17 | 18 | 19 if Month == 8:
+        print("August")
+        
+    case 20 | 21 | 22 | 23 | 24 | 25 | 26 if Month == 9:
+        print("September")
+        
+    case 27 | 28 | 29 | 30 | 31 if Month == 10:
+        print("October")
+    case _:
+        print("Confusing month")
+
+# This code is acutally really useful and fun to use
+
