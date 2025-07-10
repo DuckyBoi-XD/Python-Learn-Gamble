@@ -1511,3 +1511,20 @@ print("Thirty-sixth lesson") # The thirty-sixth lesson teaches about pip package
 # Pip is a package manager for Python that allows you to install and manage packages
 # These packages are called modules or libaries of different code
 # First I need to check whether or not there is PIP installed, luckily there is
+# Next you need to install the package. This can be done by typing the command 'pip insteall (package)'
+# After that you can use tha package. For example:
+#import camelcase
+
+#c = camelcase.CamelCase()
+
+#txt = "Hackclub provides a bunch of oppotunities!"
+
+#print(c.hump(txt))
+
+# Lastly if you want to, you can uninstall it by typing the command 'pip uninstall camelcase' then comfirming it.
+# You can also check the package list by typing the command 'pip list'
+
+
+
+
+
