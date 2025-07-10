@@ -1529,8 +1529,6 @@ print(" ")
 print("Thirty-seventh lesson") # The thirty-seventh lesson teaches about the Virtual Environment
 
 # A virtual environment is a seperate space to run tests for you code so it wont interfer with any other projects
-
-
-
-
+# I realised that VENV (virtural environment and PIP tutorials) are basicaly just guides
+# I'll proberly skip over it until I have some type of game or code
 
