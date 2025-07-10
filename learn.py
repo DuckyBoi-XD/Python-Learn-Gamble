@@ -1420,6 +1420,94 @@ def numbers(x):
 print(numbers(81))
 print(numbers(9))
 print(numbers(0.43))
-
+print(" ")
 # As again, if you don't have any instuctions but sitll want to keep it you can use pass
 
+# You can use positional only arguments (what I think is simple arguments) by adding '/' to it
+def POA(x, /):
+    print(x)
+POA(3) # Prints the number here
+# You can do it without the slash but defining 'x'
+def POA(x):
+    print(x)
+POA(x = 87)
+
+# You can use keyword only arguments with functions (print words) with '*'
+def KWOF(*, x):
+    print(x)
+KWOF(x = "Dog")
+
+# You can even combine both
+def CKWP(a, b, c, /, *, d, e, f):
+    print(a+b+c, d+e+f)
+CKWP(6, 2, 65, d = "Hack", e = "club", f = "time")
+print(" ")
+
+# Recursion is for looping a function but it is really compkicated
+# This is an example of the code and I don't understand it
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("Recursion Example Results:")
+tri_recursion(3)
+# Im skipping this one due to its complexity
+print(" ")
+
+print("Thirty-fifth lesson") # The thirty-fifth lesson teaches about try except functions
+# I was told by my frind that I should learn about a few more functions. So I will be finishing those ones
+
+# The try and expect function is to test and fix errors in your code
+try: # tries to used the code
+    print(k)
+except: # Except an error and outputs message
+    print("An excepted occured")
+print(" ")
+
+# You can make specific error messages with NameError
+try:
+    print(k)
+except NameError:
+    print("Varable not defined")
+except:
+    print("Unknown error")
+print(" ")
+
+# You can even use else with this too
+try:
+    print(x)
+except:
+    print("Something went wong")
+else:
+    print("Nothing is wong")
+print(" ")
+
+# You can use the command 'function' to execute a code regardless
+try:
+    print(x)
+except:
+    print("Error occured")
+finally:
+    print("Debug finished")
+print(" ")
+# You can also raise/make exceptions 
+
+#x = -5
+#if x < -1:
+#    raise Exception("No numbers under -1")
+
+# You can do this will text and have the error be specific
+
+#y = "HackClub"
+#if not type(y) is int:
+#    raise TypeError("Value has to be a number")
+
+
+print("Thirty-sixth lesson") # The thirty-sixth lesson teaches about pip package
+# Pip is a package manager for Python that allows you to install and manage packages
+# These packages are called modules or libaries of different code
+# First I need to check whether or not there is PIP installed, luckily there is
