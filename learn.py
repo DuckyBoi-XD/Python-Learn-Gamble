@@ -1276,12 +1276,150 @@ while c < 7:
     if c == 5:
         continue
     print(c)
-
-# You can use else statements to run code until a contition is no longer met
-d = 1
-while c > 2:
+print(" ")
+ # You can use else statements to run code until a contition is no longer met
+d = 5
+while d > 2:
     print(d)
     d -= 1
 else:
     print("NO")
-    
+print(" ")
+
+# For loops are used to execute a set of statments for each value in a list
+HackyPeople1 = ["Acon", "Amber", "Alexren", "Rowan"]
+for x in HackyPeople1:
+    print(x)
+print(" ")
+
+# You can use the break statment to stop the code when a condition is made
+for x in HackyPeople1:
+    print(x)
+    if x == "Alexren":
+        print("Alexren Cool")
+        break
+print(" ")
+
+# You can do this in a way to show a end message too
+for x in HackyPeople1:
+    print(x)
+    if x == "Alexren":
+        break
+    print("and")
+print(" ")
+
+# Like in the while loop, if use use continue with the for loop it will skip over the value
+for x in HackyPeople1:
+    if x == "Alexren":
+        continue
+    print(x)
+print(" ")
+
+# You can also print out each value of a number range
+for x in range(6):
+    print(x)
+print(" ")
+for x in range(2, 6): # This gives a range '2 - 6/5'
+    print(x)
+print(" ")
+# Basically what ever you can do with range
+
+# You can also use else statments in this
+for x in range(1, 101):
+    print(x)
+else:
+    print("Download complete")
+print(" ")
+# For and whiles loops are pretty similar so most features can corrispond to both.
+
+# You can also use nested lists
+Descriptive = ["Favourful", "Long", "Juicy"]
+Fruits1 = ["Mango", "Banana", "Strawberry"]
+
+for x in Descriptive:
+    for y in Fruits1:
+        print(x, y)
+# This is like mutiplying nuber but with string
+# for every values in Decriptive they trigger every values for the Fruits1
+# There is also a pass statement the everyone I already knew
+print(" ")
+
+
+print("Thirty-fourth lesson") # The thirty-fourth lesson teaches about functions
+# Functions is my last lesson that I'm going through
+# I don't think I've learnt everything I'll need to use, but I recon I've learnt most of the basics
+
+# Functions are a group of code where it runs when used
+# it can look into data in parameters to use
+
+def my_function(): # defineds function's name
+    print("Hello, from a function") # code inside function
+
+my_function() # runs code inside function
+# Functions are just like variables but for code
+print(" ")
+
+# You can add arguments which is basiaclly making a sentence and adding the value last
+def GreatPeople(GPN):
+    print(GPN + " is a good person")
+
+GreatPeople("Alexren")
+GreatPeople("Acon")
+GreatPeople("Niko")
+print(" ")
+
+# You can add multiple arguments too
+def GoodPeople2(FFN, FLN):
+    print(FFN + FLN + " is a good person")
+
+GoodPeople2("Alex", "ren")
+GoodPeople2("Ac", "on")
+GoodPeople2("Ni", "ko")
+print(" ")
+
+# If you don't know how many arguments there is going to be you can use *
+
+def GoodPeople3(*Person):
+  print(Person[random.randrange(0, 2)] + " is a good person")
+
+GoodPeople3("Alexren", "Acon", "Niko")
+print(" ")
+# I also used a random function for fun
+
+# This uses keywords
+def GoodPeople4(P1, P2, P3):
+    print(P2 + " is a human ")
+GoodPeople4(P1 = "Qincai",P2 = "Koji", P3 = "Valen" )
+print(" ")
+
+# If you don't know how many key words there is going to be, you can use **
+def GoodPeople5(**Person):
+    print(Person["P1"] + " is a human")
+GoodPeople5(P1 = "Ruby", P2 = "Kyle")
+print(" ")
+
+# You can also have a default value argument
+def Countries(country = "earth"):
+    print("I'm from " + country)
+Countries("Aisa")
+Countries("Oceania")
+Countries()
+print(" ")
+
+# You can pass lists as arguments too
+def ListVeg(Veggies):
+    for x in Veggies:
+        print(x)
+Vegs = ["Carrot", "Lettuce", "Onion"]
+ListVeg(Vegs)
+
+# You can also return numbers with functions
+def numbers(x):
+    return x * 5
+
+print(numbers(81))
+print(numbers(9))
+print(numbers(0.43))
+
+# As again, if you don't have any instuctions but sitll want to keep it you can use pass
+
