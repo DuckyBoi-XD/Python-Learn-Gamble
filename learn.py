@@ -1523,6 +1523,12 @@ print("Thirty-sixth lesson") # The thirty-sixth lesson teaches about pip package
 
 # Lastly if you want to, you can uninstall it by typing the command 'pip uninstall camelcase' then comfirming it.
 # You can also check the package list by typing the command 'pip list'
+print(" ")
+
+
+print("Thirty-seventh lesson") # The thirty-seventh lesson teaches about the Virtual Environment
+
+# A virtual environment is a seperate space to run tests for you code so it wont interfer with any other projects
 
 
 
