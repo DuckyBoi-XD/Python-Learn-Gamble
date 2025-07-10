@@ -1244,4 +1244,44 @@ match Day:
         print("Confusing month")
 
 # This code is acutally really useful and fun to use
+print(" ")
 
+
+print("Thirty-third lesson") # The thirty-third lesson teaches about while loops and for loops
+
+# Loops are used to repeat a block of code multiple times until a condition is met or not met
+# There are 2 types of loops, while loops and for loops
+
+# While loops are used to repeat a piece of code until a condition is met or not met
+a = 1
+while a < 10:
+    print(a)
+    a += 1
+print(" ")
+
+# You can use if statmentas with this using 'break'
+b = 1
+while b < 5:
+    print(b)
+    if b == 2:
+        print("LOL")
+        break
+    b += 1
+print(" ")
+
+# You can use the continue command to skip a number
+c = 0
+while c < 7:
+    c += 1
+    if c == 5:
+        continue
+    print(c)
+
+# You can use else statements to run code until a contition is no longer met
+d = 1
+while c > 2:
+    print(d)
+    d -= 1
+else:
+    print("NO")
+    
