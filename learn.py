@@ -1460,8 +1460,8 @@ print(" ")
 
 print("Thirty-fifth lesson") # The thirty-fifth lesson teaches about try except functions
 # I was told by my frind that I should learn about a few more functions. So I will be finishing those ones
-
-# The try and expect function is to test and fix errors in your code
+'''
+The try and expect function is to test and fix errors in your code
 try: # tries to used the code
     print(k)
 except: # Except an error and outputs message
@@ -1476,7 +1476,7 @@ except NameError:
 except:
     print("Unknown error")
 print(" ")
-
+'''
 # You can even use else with this too
 try:
     print(x)
