@@ -230,14 +230,14 @@ def CardPick():
 
 # Game Pick Function
 def GamePick():
-        global Module
-        Module = input("\nChoose what you would like to do:\n1) Dice roll (1/6 - 6x)\n2) Coin flip (1/2 - 2x)\n3) Wheel spin (1/100 100x)\n4) Card pick (1/52 52x)\n5) Wallet (View money)\n6) Quit (Leave the luck room)\n").strip().lower()
+        global MenuOption
+        MenuOption = input("\nChoose what you would like to do:\n1) Dice roll (1/6 - 6x)\n2) Coin flip (1/2 - 2x)\n3) Wheel spin (1/100 100x)\n4) Card pick (1/52 52x)\n5) Wallet (View money)\n6) Quit (Leave the luck room)\n").strip().lower()
 
 
 # Looping Game
 while True:
     GamePick() # Uses game function
-    if Module == "dice roll" or Module == "1": # Checks if user picks either dice roll or 1
+    if MenuOption == "dice roll" or MenuOption == "1": # Checks if user picks either dice roll or 1
         while True: # Loops
             result = DiceRoll() # Uses dice roll function and output as result variable 
             if result == "again": # Checks if varaible is again
@@ -248,7 +248,7 @@ while True:
                 exit() # ends code 
 
 
-    elif Module == "coin flip" or Module == "2":
+    elif MenuOption == "coin flip" or MenuOption == "2":
         while True:
             result = CoinFlip()
             if result == "again":
@@ -257,7 +257,7 @@ while True:
                 break
 
 
-    elif Module == "wheel spin" or Module == "3":
+    elif MenuOption == "wheel spin" or MenuOption == "3":
         while True:
             result = WheelSpin()
             if result == "again":
@@ -265,7 +265,7 @@ while True:
             elif result == "home":
                 break
 
-    elif Module == "card pick":
+    elif MenuOption == "card pick":
         while True:
             result = CardPick()
             if result == "again":
@@ -273,10 +273,13 @@ while True:
             elif result == "home":
                 break
     
-    elif Module == "wallet" or Module == 5:
+    elif MenuOption == "wallet" or MenuOption == 5:
         print(f"\nYou have ${UserWallet:.2f}")
 
-    elif Module == "quit" or Module == 6:
+    elif MenuOption == "quit" or MenuOption == 6:
         exit()
+
+    elif MenuOption in ("duckyboi_xd", "duckydk_xd", "duckydk-xd", "duckydk"):
+        print("The creator of this game appreciates you playing!")
     else:
-        print("Invalid option")
+        print("\nInvalid option")
