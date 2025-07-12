@@ -1,6 +1,5 @@
 
 import random # Imports the random package
-
 # Starting game text
 print("Welcome to the luck room")
 UserWallet = 1000 # Assigns the users money
