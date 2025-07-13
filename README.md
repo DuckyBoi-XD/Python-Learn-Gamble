@@ -72,6 +72,7 @@ Example:
 2) I want to try to make a small simple game to show my understanding. I'm thinking of making a simgle shop where you can buy stuff or making a 
 simpler gamble game like coin flip, dice roll, guess number or guess card.
 
+I've created the mini game in the MiniGame.py which I like to call, Luck Room. I used many features I would like to use for my main game. I'm also hopping that I'm able to use pygame and pygbag to make the game on a website.
 
 
 3) Learning the difficult parts of th game is going to be conected with my 4th goal which is to make a gambaling game
@@ -80,8 +81,6 @@ simpler gamble game like coin flip, dice roll, guess number or guess card.
 4) My end projct is a gambaling game. Now I'm not really planning to create a new gambaling game so I'm going to just recreate gambaling games 
 that there already is. For my game I'm planning to have a game where you can access all kind of gambaling games. For those games I'm planning 
 to have: Blackjack, roulette, slots and ride the bus. If I can, I want to try to create some other games liks, poker, liar's dice and liar's 
-deck. These games are more difficult because I would need to create a computor player or an AI or the player to verse (for make it connect to 
+deck. These games are more difficult because I would need to create a computor player or an AI or the player to verse (for make it connect to real life people but I ain't that good).
 
-real life people but I ain't that good).
-
-
+I have reserched into my next game where I'm going to add common casino games. I also need to figure out how to use pygame and pygbag.

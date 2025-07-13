@@ -1,5 +1,9 @@
 
 import random # Imports the random package
+import pygame
+
+pygame.init()
+
 # Starting game text
 print("Welcome to the luck room")
 UserWallet = 1000 # Assigns the users money
@@ -264,7 +268,7 @@ while True:
             elif result == "home":
                 break
 
-    elif MenuOption == "card pick":
+    elif MenuOption == "card pick" or MenuOption == "4":
         while True:
             result = CardPick()
             if result == "again":
@@ -272,10 +276,11 @@ while True:
             elif result == "home":
                 break
     
-    elif MenuOption == "wallet" or MenuOption == 5:
+    elif MenuOption == "wallet" or MenuOption == "5":
         print(f"\nYou have ${UserWallet:.2f}")
 
-    elif MenuOption == "quit" or MenuOption == 6:
+    elif MenuOption == "quit" or MenuOption == "6":
+        print("You have decided to leave the luck room, sadly, you got mugged. Luckily you made it out alive!")
         exit()
 
     elif MenuOption in ("duckyboi_xd", "duckydk_xd", "duckydk-xd", "duckydk"):
