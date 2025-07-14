@@ -84,3 +84,5 @@ to have: Blackjack, roulette, slots and ride the bus. If I can, I want to try to
 deck. These games are more difficult because I would need to create a computor player or an AI or the player to verse (for make it connect to real life people but I ain't that good).
 
 I have reserched into my next game where I'm going to add common casino games. I also need to figure out how to use pygame and pygbag.
+
+I have concluded my reaserch to figure out a key part of my game. Due to me writing in python, I couldn't easily make my game for a website because pythons is more fit for desktop and terminals games. This caused me to think long and hard about what I was going to do. I decided tha t I should learn how to code in all, Javascript, html and css. This is so I can create my project on the web and design each function exactly how I want it. I want to create a game which includes the popular gambaling. I also wanted to try make this game high quality but I might rush things os I just want to take my time.

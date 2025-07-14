@@ -1,8 +1,5 @@
 
 import random # Imports the random package
-import pygame
-
-pygame.init()
 
 # Starting game text
 print("Welcome to the luck room")
