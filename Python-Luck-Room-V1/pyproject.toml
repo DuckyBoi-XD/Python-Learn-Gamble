@@ -10,7 +10,7 @@ authors = [
     { name="Braeden Sy Tan", email="Braedenjairsytan@icloud.com" }
 ]
 readme = "README.md"
-license = {text = "MIT"}
+license = {text = "GPL-3.0-only"}
 dependencies = []
 
 [project.urls]

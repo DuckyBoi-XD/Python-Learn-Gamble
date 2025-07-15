@@ -1,4 +1,3 @@
-
 import random # Imports the random package
 
 # Starting game text
@@ -234,53 +233,56 @@ def GamePick():
         MenuOption = input("\nChoose what you would like to do:\n1) Dice roll (1/6 - 6x)\n2) Coin flip (1/2 - 2x)\n3) Wheel spin (1/100 100x)\n4) Card pick (1/52 52x)\n5) Wallet (View money)\n6) Quit (Leave the luck room)\n").strip().lower()
 
 
-# Looping Game
-while True:
-    GamePick() # Uses game function
-    if MenuOption == "dice roll" or MenuOption == "1": # Checks if user picks either dice roll or 1
-        while True: # Loops
-            result = DiceRoll() # Uses dice roll function and output as result variable 
-            if result == "again": # Checks if varaible is again
-                continue # runs loop again
-            elif result == "home": 
-                break # Stops this loop and goes back to the other loop
-            elif result == "quit":
-                exit() # ends code 
+def main():
+    while True: # Main loop
+        GamePick() # Uses game function
+        if MenuOption == "dice roll" or MenuOption == "1": # Checks if user picks either dice roll or 1
+            while True: # Loops
+                result = DiceRoll() # Uses dice roll function and output as result variable 
+                if result == "again": # Checks if varaible is again
+                    continue # runs loop again
+                elif result == "home": 
+                    break # Stops this loop and goes back to the other loop
+                elif result == "quit":
+                    exit() # ends code 
 
 
-    elif MenuOption == "coin flip" or MenuOption == "2":
-        while True:
-            result = CoinFlip()
-            if result == "again":
-                continue
-            elif result == "home":
-                break
+        elif MenuOption == "coin flip" or MenuOption == "2":
+            while True:
+                result = CoinFlip()
+                if result == "again":
+                    continue
+                elif result == "home":
+                    break
 
 
-    elif MenuOption == "wheel spin" or MenuOption == "3":
-        while True:
-            result = WheelSpin()
-            if result == "again":
-                continue
-            elif result == "home":
-                break
+        elif MenuOption == "wheel spin" or MenuOption == "3":
+            while True:
+                result = WheelSpin()
+                if result == "again":
+                    continue
+                elif result == "home":
+                    break
 
-    elif MenuOption == "card pick" or MenuOption == "4":
-        while True:
-            result = CardPick()
-            if result == "again":
-                continue
-            elif result == "home":
-                break
-    
-    elif MenuOption == "wallet" or MenuOption == "5":
-        print(f"\nYou have ${UserWallet:.2f}")
+        elif MenuOption == "card pick" or MenuOption == "4":
+            while True:
+                result = CardPick()
+                if result == "again":
+                    continue
+                elif result == "home":
+                    break
+        
+        elif MenuOption == "wallet" or MenuOption == "5":
+            print(f"\nYou have ${UserWallet:.2f}")
 
-    elif MenuOption == "quit" or MenuOption == "6":
-        print("You have decided to leave the luck room, sadly, you got mugged. Luckily you made it out alive!")
-        exit()
+        elif MenuOption == "quit" or MenuOption == "6":
+            print("You have decided to leave the luck room, sadly, you got mugged. Luckily you made it out alive!")
+            exit()
 
-    elif MenuOption in ("duckyboi_xd", "duckydk_xd", "duckydk-xd", "duckydk"):
-        print("The creator of this game appreciates you playing!")
-    else:
-        print("\nInvalid option")
+        elif MenuOption in ("duckyboi_xd", "duckydk_xd", "duckydk-xd", "duckydk"):
+            print("The creator of this game appreciates you playing!")
+        else:
+            print("\nInvalid option")
+
+if __name__ == "__main__":
+    main() # Runs main function
