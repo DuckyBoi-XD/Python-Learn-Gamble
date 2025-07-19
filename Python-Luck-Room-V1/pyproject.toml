@@ -7,11 +7,13 @@ name = "luckroom"
 version = "0.1.0"
 description = "A simple luck based game."
 authors = [
-    { name="Braeden Sy Tan", email="Braedenjairsytan@icloud.com" }
+    { name="Braeden Sy Tan", email="braedenjairsytan@icloud.com" }
 ]
 readme = "README.md"
-license = {text = "GPL-3.0-only"}
+license = "GPL-3.0-only"
+requires-python = ">=3.7"
 dependencies = []
+scripts = { luckroom = "LuckRoom:main" }
 
 [project.urls]
 "Homepage" = "https://github.com/DuckyBoi-XD/Python-Learn-Gamble"
