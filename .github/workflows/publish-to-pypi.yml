@@ -1,8 +1,11 @@
 name: Publish Python distribution 📦 to PyPI
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Update RELEASE on GitHub Release"]
+    types:
+      - completed
 
 jobs:
   build-and-publish:
@@ -18,11 +21,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install build
       - name: Build package
+        working-directory: Python-Luck-Room-V1
         run: |
           python -m build
       - name: Publish to PyPI with Trusted Publisher
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           skip-existing: true
-          packages-dir: src/dist
+          packages-dir: Python-Luck-Room-V1/dist
         # OIDC is used automatically if you have set up PyPI Trusted Publisher
