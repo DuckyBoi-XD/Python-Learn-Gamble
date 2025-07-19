@@ -1,0 +1,51 @@
+name: Update RELEASE on GitHub Release
+
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Release tag name (for manual run)'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  update-release-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check out the branch for this release tag
+        run: |
+          git fetch --all
+          branch=$(git branch -r --contains "${GITHUB_SHA}" | grep -v HEAD | head -n 1 | sed 's/origin\///')
+          echo "Checking out branch: $branch"
+          git checkout "$(echo "$branch" | xargs)"
+
+      - name: Set tag name variable
+        id: set_tag
+        run: |
+          if [ -n "${{ github.event.release.tag_name }}" ]; then
+            echo "TAG_NAME=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
+          elif [ -n "${{ github.event.inputs.tag_name }}" ]; then
+            echo "TAG_NAME=${{ github.event.inputs.tag_name }}" >> $GITHUB_ENV
+          else
+            echo "TAG_NAME=unknown" >> $GITHUB_ENV
+          fi
+
+      - name: Update version in pyproject.toml, setup.py, and __init__.py [Actions]
+        run: |
+          sed -i "s/version = \".*\"/version = \"$TAG_NAME\"/" Python-Luck-Room-V1/pyproject.toml
+          sed -i "s/version=\".*\"/version=\"$TAG_NAME\"/" Python-Luck-Room-V1/setup.py
+          sed -i "s/^__version__ = .*/__version__ = '$TAG_NAME'/" Python-Luck-Room-V1/__init__.py
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(release): update RELEASE and version for new GitHub release [Actions]"
+          file_pattern: Python-Luck-Room-V1/pyproject.toml Python-Luck-Room-V1/setup.py Python-Luck-Room-V1/__init__.py
