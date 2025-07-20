@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="luckroom",
-    version="major.minor.patch",
+    version="0.1.1",
     description="A simple luck based game",
     author="Braedon Sy Tan",
     packages=find_packages(),
