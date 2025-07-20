@@ -6,6 +6,9 @@ on:
     workflows: ["Update RELEASE on GitHub Release"]
     types:
       - completed
+      
+permissions:
+  id-token: write
 
 jobs:
   build-and-publish:
