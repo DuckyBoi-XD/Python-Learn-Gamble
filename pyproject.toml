@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Luck-Room-v1"
+name = "luck-room-v1"
 version = "0.1.1"
 description = "A simple luck based game."
 authors = [
@@ -13,7 +13,9 @@ readme = "README.md"
 license = "GPL-3.0-only"
 requires-python = ">=3.7"
 dependencies = []
-scripts = { luckroom = "luck_room_v1.LuckRoom:main" }
+
+[project.scripts]
+luckroom = "luck_room_v1.LuckRoom:main"
 
 [project.urls]
 "Homepage" = "https://github.com/DuckyBoi-XD/Python-Learn-Gamble"
