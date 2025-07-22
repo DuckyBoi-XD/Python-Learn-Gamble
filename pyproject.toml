@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "luck-room-v1"
-version = "0.1.3"
+version = "0.1.4"
 description = "A simple luck based game."
 authors = [
     { name="Braeden Sy Tan", email="braedenjairsytan@icloud.com" }
