@@ -9,6 +9,7 @@ If confused how to install:
 
 2. use the code 'pip install luck-room-v1'
 or 'pip3 install luck-room-v1'
+or 'py -m pip install luck-room-v1'
 
 3. Make sure the most recent version is installed (if you installed any previous versions you may need to uninstall and install again)
 
