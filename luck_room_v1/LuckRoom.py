@@ -284,8 +284,10 @@ def main():
                 print("\nInvalid option")
 
     except KeyboardInterrupt:
-        print("\nYou have exit the game using Ctrl + C\nI didn't design this game to be exited this way and since you know how to do this you must be very intellegent")
+        print("\nYou have exit the game using Ctrl + C\nI didn't design this game to be exited this way and since you know how to do this you must be very intelligent")
         exit()
-
+    except EOFError:
+        print("\nou have exit the game using Ctrl + D\nI didn't design this game to be exited this way and since you know how to do this you must be very intelligent")
+        exit()
 if __name__ == "__main__":
     main() # Runs main function
