@@ -9,19 +9,19 @@ If confused how to install:
 
 2. Use one of the commands
    
-   ```bash
+   ```sh
    pip install luck-room-v1
    ```
    
-   ```bash
+   ```sh
    pip3 install luck-room-v1
    ```
    
-   ```bash
+   ```sh
    pipx install luck-room-v1
    ```
    
-   ```bash
+   ```sh
    python3 -m pip install luck-room-v1
    ```
 
