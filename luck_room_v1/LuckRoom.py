@@ -232,55 +232,60 @@ def GamePick():
 
 
 def main():
-    while True: # Main loop
-        GamePick() # Uses game function
-        if MenuOption == "dice roll" or MenuOption == "1": # Checks if user picks either dice roll or 1
-            while True: # Loops
-                result = DiceRoll() # Uses dice roll function and output as result variable 
-                if result == "again": # Checks if varaible is again
-                    continue # runs loop again
-                elif result == "home": 
-                    break # Stops this loop and goes back to the other loop
-                elif result == "quit":
-                    exit() # ends code 
+    try:
+        while True: # Main loop
+            GamePick() # Uses game function
+            if MenuOption == "dice roll" or MenuOption == "1": # Checks if user picks either dice roll or 1
+                while True: # Loops
+                    result = DiceRoll() # Uses dice roll function and output as result variable 
+                    if result == "again": # Checks if varaible is again
+                        continue # runs loop again
+                    elif result == "home": 
+                        break # Stops this loop and goes back to the other loop
+                    elif result == "quit":
+                        exit() # ends code 
 
 
-        elif MenuOption == "coin flip" or MenuOption == "2":
-            while True:
-                result = CoinFlip()
-                if result == "again":
-                    continue
-                elif result == "home":
-                    break
+            elif MenuOption == "coin flip" or MenuOption == "2":
+                while True:
+                    result = CoinFlip()
+                    if result == "again":
+                        continue
+                    elif result == "home":
+                        break
 
 
-        elif MenuOption == "wheel spin" or MenuOption == "3":
-            while True:
-                result = WheelSpin()
-                if result == "again":
-                    continue
-                elif result == "home":
-                    break
+            elif MenuOption == "wheel spin" or MenuOption == "3":
+                while True:
+                    result = WheelSpin()
+                    if result == "again":
+                        continue
+                    elif result == "home":
+                        break
 
-        elif MenuOption == "card pick" or MenuOption == "4":
-            while True:
-                result = CardPick()
-                if result == "again":
-                    continue
-                elif result == "home":
-                    break
+            elif MenuOption == "card pick" or MenuOption == "4":
+                while True:
+                    result = CardPick()
+                    if result == "again":
+                        continue
+                    elif result == "home":
+                        break
         
-        elif MenuOption == "wallet" or MenuOption == "5":
-            print(f"\nYou have ${UserWallet:.2f}")
+            elif MenuOption == "wallet" or MenuOption == "5":
+                print(f"\nYou have ${UserWallet:.2f}")
 
-        elif MenuOption == "quit" or MenuOption == "6":
-            print("You have decided to leave the luck room, sadly, you got mugged. Luckily you made it out alive!")
-            exit()
+            elif MenuOption == "quit" or MenuOption == "6":
+                print("You have decided to leave the luck room, sadly, you got mugged. Luckily you made it out alive!")
+                exit()
 
-        elif MenuOption in ("duckyboi_xd", "duckydk_xd", "duckydk-xd", "duckydk"):
-            print("The creator of this game appreciates you playing!")
-        else:
-            print("\nInvalid option")
+            elif MenuOption in ("duckyboi_xd", "duckydk_xd", "duckydk-xd", "duckydk"):
+                print("The creator of this game appreciates you playing!")
+            else:
+                print("\nInvalid option")
+
+    except KeyboardInterrupt:
+        print("\nYou have exit the game using Ctrl + C\nI didn't design this game to be exited this way and since you know how to do this you must be intellegent")
+        exit()
 
 if __name__ == "__main__":
     main() # Runs main function
