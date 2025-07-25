@@ -5,23 +5,31 @@ The repo/project is based on learning how to code in python with a touch of expe
 If your seeing this on the PyPi then most of this is irrelevant.
 If confused how to install:
 
-1. Open Terminal or Command Prompt with python installed
+1. Open Terminal or Command Prompt with Python and `python3-pip` installed
 
-2. Run the code
+2. Use one of the commands
+   
+   ```sh
+   pip install luck-room-v1
+   ```
+   
+   ```sh
+   pip3 install luck-room-v1
+   ```
+   
+   ```sh
+   pipx install luck-room-v1
+   ```
+   
+   ```sh
+   python3 -m pip install luck-room-v1
+   ```
 
-        'pip install luck-room-v1'
-    or   
-  
-        'pip3 install luck-room-v1'
-    or
+4. Make sure the most recent version is installed (if you installed any previous versions you may need to uninstall and install again)
 
-        'py -m pip install luck-room-v1'
+5. Use the command `luckroom` to play the game
 
-3. Make sure the most recent version is installed (if you installed any previous versions you may need to uninstall and install again)
-
-4. Use the code 'luckroom' to play the game
-
-5. Enjoy c:
+6. Enjoy c:
 
 ### As of for now this is my steps to successding this project:
 
