@@ -275,11 +275,11 @@ def main():
                 print(f"\nYou have ${UserWallet:.2f}")
 
             elif MenuOption == "quit" or MenuOption == "6":
-                print("You have decided to leave the luck room, sadly, you got mugged. Luckily you made it out alive!")
+                print("You have decided to leave the luck room, sadly, you got mugged. Luckily you made it out alive, without any money!")
                 exit()
 
             elif MenuOption in ("duckyboi_xd", "duckydk_xd", "duckydk-xd", "duckydk"):
-                print("The creator of this game appreciates you playing!")
+                print("\nThe creator of this game appreciates you playing!")
             else:
                 print("\nInvalid option")
 
