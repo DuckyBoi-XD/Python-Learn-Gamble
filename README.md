@@ -1,7 +1,10 @@
 # Python-Learn-Gamble
+
+---
 The repo/project is based on learning how to code in python with a touch of experience and creating a game at the end to show my still (Gambling Game).
 
-# PyPi
+## PyPi
+
 If your seeing this on the PyPi then most of this is irrelevant.
 If confused how to install:
 
@@ -10,10 +13,10 @@ If confused how to install:
 2. Run the code
 
         'pip install luck-room-v1'
-    or   
+    
   
         'pip3 install luck-room-v1'
-    or
+    
 
         'py -m pip install luck-room-v1'
 
@@ -23,7 +26,9 @@ If confused how to install:
 
 5. Enjoy c:
 
-### As of for now this is my steps to successding this project:
+## Python Game
+
+### As of for now this is my steps to successding this project
 
 1. Learn the basics on how to code
 2. Make a small little game to show my understanding
@@ -33,8 +38,11 @@ If confused how to install:
 6. Possibly make it into a Desktop game
 
 ### Working
+
 1) My whole learning explanation is in my learn.py file but here I'm going to explain, and show my understanding here. P.S. I realised that it will take way too long and it won't be interesting so I'm going to jsut do a few, the very baiscs.
-### Basic Functions:
+
+### Basic Functions
+
 **print()** - A command that prints out what ever is in the '()' or brackets. This can be anything
 
 **Example:**
@@ -43,7 +51,7 @@ If confused how to install:
 
 **If statment** - A statement which adds a condition to use a block of code. This can be done by writing 'if' on a new line followed by the condition and lastly the action.
 
-**Example:** 
+**Example:**
 
     if x > 5 
         print("This is how you use if statments")
