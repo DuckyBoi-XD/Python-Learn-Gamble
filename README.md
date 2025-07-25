@@ -57,7 +57,51 @@ If confused how to install:
    '''
    ```
 
+## Python Concepts
+
 **print()** – A command that prints out whatever is in the parentheses `()`. This can be anything.
+
+**Example:**
+
+```python
+x = 54
+HackClub_SummerOfMaking = "yay"
+Bob, Kyle, Lisa = 1, 2, 3
+
+print(y)
+print(x + y)
+```
+
+**global** - A command that will classify, mainly, defining variables, as a global variables no matter where it is.
+
+```python
+global
+```
+
+**type()** - A command that you can use to find the type of data type a variable holds
+
+```python
+x = 65
+print(type(x))
+```
+
+**If statement** – A statement that adds a condition to a block of code. This can be done by writing `if` on a new line, followed by the condition and then the action.
+
+**Example:**
+
+```python
+if x > 5:
+    print("This is greater than 5")
+```
+
+## Project Goals
+
+1. I want to try to make a small simple game to show my understanding. I'm thinking of making a single shop where you can buy stuff or making a simpler gamble game like coin flip, dice roll, guess the number, or guess the card.
+
+2. Learning the difficult parts of the game is going to be connected with my next goal, which is to make a gambling game.
+
+3. My end project is a gambling game. I'm not really planning to create a new gambling game, so I'm going to just recreate gambling games that already exist. For my game, I'm planning to have a place where you can access all kinds of gambling games. For those games, I'm planning to include: Blackjack, roulette, slots, and ride the bus. If I can, I want to try to create some other games like poker, liar's dice, and liar's deck. These games are more difficult because I would need to create a computer player or an AI for the player to compete against (or make it connect to real-life people, but I'm not that good).
+
 ```python
 x = 54
 
@@ -80,10 +124,13 @@ x = 65
 print(type(x))
 ```
 **If statement** – A statement that adds a condition to a block of code. This can be done by writing `if` on a new line, followed by the condition and then the action.
+
 1) I want to try to make a small simple game to show my understanding. I'm thinking of making a single shop where you can buy stuff or making a simpler gamble game like coin flip, dice roll, guess the number, or guess the card.
+
 **Example:**
 2) Learning the difficult parts of the game is going to be connected with my next goal, which is to make a gambling game.
     if x > 5:
+        print("This is how you use if statements")
 3) My end project is a gambling game. I'm not really planning to create a new gambling game, so I'm going to just recreate gambling games that already exist. For my game, I'm planning to have a place where you can access all kinds of gambling games. For those games, I'm planning to include: Blackjack, roulette, slots, and ride the bus. If I can, I want to try to create some other games like poker, liar's dice, and liar's deck. These games are more difficult because I would need to create a computer player or an AI for the player to compete against (or make it connect to real-life people, but I’m not that good).
 
 ```python
