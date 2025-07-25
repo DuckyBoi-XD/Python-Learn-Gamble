@@ -1,6 +1,21 @@
 # Python-Learn-Gamble
 The repo/project is based on learning how to code in python with a touch of experience and creating a game at the end to show my still (Gambling Game).
 
+# PyPi
+If your seeing this on the PyPi then most of this is irrelevant.
+If confused how to install:
+
+1. Open Terminal or Command Prompt with python installed
+
+2. use the code 'pip install luck-room-v1'
+or 'pip3 install luck-room-v1'
+
+3. Make sure the most recent version is installed (if you installed any previous versions you may need to uninstall and install again)
+
+4. Use the code 'luckroom' to play the game
+
+5. Enjoy c:
+
 ### As of for now this is my steps to successding this project:
 
 1. Learn the basics on how to code
