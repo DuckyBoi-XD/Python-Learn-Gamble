@@ -33,7 +33,7 @@ If confused how to install:
 
 5. Enjoy c:
 
-## Learning Goals
+## As of for now this is my steps to successding this project:
 
 1. Learn the basics on how to code
 
