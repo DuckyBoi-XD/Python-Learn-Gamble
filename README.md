@@ -11,30 +11,30 @@ If confused how to install:
 1. Open Terminal or Command Prompt with Python and `python3-pip` installed
 
 2. Use one of the commands
-   
+
    ```sh
    pip install luck-room-v1
    ```
-   
+
    ```sh
    pip3 install luck-room-v1
    ```
-   
+
    ```sh
    pipx install luck-room-v1
    ```
-   
+
    ```sh
    python3 -m pip install luck-room-v1
    ```
 
-4. Make sure the most recent version is installed (if you installed any previous versions you may need to uninstall and install again)
+3. Make sure the most recent version is installed (if you installed any previous versions you may need to uninstall and install again)
 
-5. Use the command `luckroom` to play the game
+4. Use the command `luckroom` to play the game
 
-6. Enjoy c:
+5. Enjoy c:
 
-### As of for now this is my steps to successding this project:
+### As of for now this is my steps to successding this project
 
 1. Learn the basics on how to code
 2. Make a small little game to show my understanding
@@ -53,17 +53,22 @@ If confused how to install:
 
 **Example:**
 
+   ```sh
         print("This is how you print messages")
+   ```
 
 **If statment** - A statement which adds a condition to use a block of code. This can be done by writing 'if' on a new line followed by the condition and lastly the action.
 
 **Example:**
 
+   ```sh
     if x > 5 
         print("This is how you use if statments")
+   ```
 
-**Comments** - A feature where you can write notes that won't effect the code. You can do this by using a '#' then your message. You can also make multi-line comments by surounding the text in triple quotes ,""", or ,''',. 
+**Comments** - A feature where you can write notes that won't effect the code. You can do this by using a '#' then your message. You can also make multi-line comments by surounding the text in triple quotes ,""", or ,''',.
 
+   ```sh
     # Comment
 
     '''
@@ -71,11 +76,13 @@ If confused how to install:
     line
     comment
     '''
+   ```
 
 **Variables** - A statement, connecting a certain name to a value. **Variables** has rules to naming variabales. It must only include letters a-z, A-Z, 0-9 and '_'. When naming variables, variables are case sensitive to a is different to A. If you use symbols like '*' or '#', will cause an error as well as naming your variable a special word in Python like 'if' or 'else'. You can assign multiple values to multiple variables by adding commas or ',' between every value or variable. With the print command, you can use a variable in it. You can also combine variables using '+' or ',', This can be done with all kinds of variabale. If a variable is not inside any function or code (code with indent or '   ') they are considered global variables where any code can use it. Code that is defined in a function or in another code is called a local variable and other blocks of code, outside of the code defining it, can't use it.
 
 Example:
 
+   ```sh
     x = 54
 
     HackClub_SummerOfMaking = "yay"
@@ -86,7 +93,7 @@ Example:
     print(y)
 
     print(x + y)
-
+    ```
 
 **Global** - A command that will classify, mainly, defining variables, as a global variables no matter where it is.
 
@@ -105,18 +112,16 @@ Example:
 
 **Data type:** str or string - A data type, under the word catagory, is the only data type that hold a word.
 
-2) I want to try to make a small simple game to show my understanding. I'm thinking of making a simgle shop where you can buy stuff or making a 
+2) I want to try to make a small simple game to show my understanding. I'm thinking of making a simgle shop where you can buy stuff or making a
 simpler gamble game like coin flip, dice roll, guess number or guess card.
 
 I've created the mini game in the MiniGame.py which I like to call, Luck Room. I used many features I would like to use for my main game. I'm also hopping that I'm able to use pygame and pygbag to make the game on a website.
 
-
 3) Learning the difficult parts of th game is going to be conected with my 4th goal which is to make a gambaling game
 
-
-4) My end projct is a gambaling game. Now I'm not really planning to create a new gambaling game so I'm going to just recreate gambaling games 
-that there already is. For my game I'm planning to have a game where you can access all kind of gambaling games. For those games I'm planning 
-to have: Blackjack, roulette, slots and ride the bus. If I can, I want to try to create some other games liks, poker, liar's dice and liar's 
+4) My end projct is a gambaling game. Now I'm not really planning to create a new gambaling game so I'm going to just recreate gambaling games
+that there already is. For my game I'm planning to have a game where you can access all kind of gambaling games. For those games I'm planning
+to have: Blackjack, roulette, slots and ride the bus. If I can, I want to try to create some other games liks, poker, liar's dice and liar's
 deck. These games are more difficult because I would need to create a computor player or an AI or the player to verse (for make it connect to real life people but I ain't that good).
 
 I have reserched into my next game where I'm going to add common casino games. I also need to figure out how to use pygame and pygbag.
