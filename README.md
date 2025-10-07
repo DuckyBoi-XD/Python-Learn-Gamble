@@ -112,6 +112,8 @@ Example:
 
 **Data type:** str or string - A data type, under the word catagory, is the only data type that hold a word.
 
+```
+
 2) I want to try to make a small simple game to show my understanding. I'm thinking of making a simgle shop where you can buy stuff or making a
 simpler gamble game like coin flip, dice roll, guess number or guess card.
 
